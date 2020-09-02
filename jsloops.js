@@ -19,7 +19,7 @@ for(let currentNum = 0; currentNum < 11; currentNum++) {
 // Anatomy of a for loop :
 // Where the count (index) starts
 // How many iterations we want the loop to go through
-// What to do after each loop
+// What to do after each iteration
 
 for(let i = 0; i < 5; i++) {
     console.log(i)
