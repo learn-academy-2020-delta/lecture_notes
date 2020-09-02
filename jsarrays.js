@@ -90,5 +90,3 @@ var arr1 = ["S", 2, "y", 3, "y", 1, "t" ]
 var [firstVal, secondVal] = [1, 2]
 // console.log(firstVal);
 // console.log(secondVal);
-
-// https://github.com/learn-academy-2020-alpha/Syllabus/blob/master/javascript/arrays.md
