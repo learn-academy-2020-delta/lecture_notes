@@ -34,7 +34,7 @@ var array1 = [1, 7, 10, 9, 3, 4, 2]
 // console.log(array1.length);
 
 // Mutators - also know as "setters" - methods that change the original array.
-// .push() - pushes a value into the end of an array
+// .push(value) - pushes a value into the end of an array
 // .pop() - removes and returns the last value in an array
 // .shift() - removes the first value in an array
 // .unshift(value) - adds a new element to the beginning of an array
