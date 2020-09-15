@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import GroceryCart from './components/GroceryCart'
 
 class App extends Component{
   constructor(props){
@@ -29,14 +30,7 @@ class App extends Component{
               )
             })}
           </ul>
-          <h3>Grocery Cart</h3>
-          <ul>
-            { this.state.cart.map((item, index) => {
-              return (
-                <li key={ index }>{ item }</li>
-              )
-            })}
-          </ul>
+          <GroceryCart cart={ this.state.cart } />
       </React.Fragment>
     )
   }
