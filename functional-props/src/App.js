@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
 import GroceryCart from './components/GroceryCart'
+import GroceryItems from './components/GroceryItems'
 
 class App extends Component{
   constructor(props){
     super(props)
     this.state = {
-      items: ["Apples", "Oatmeal", "Cheese", "Ice cream", "Juice", "Peanut butter"],
+      items: ["Apples", "Oatmeal", "Cheese", "Ice cream", "Juice", "Peanut butter", "Chocolate"],
       cart: []
     }
   }
@@ -18,19 +19,12 @@ class App extends Component{
   render(){
     return(
       <React.Fragment>
-          <h1>Grocery App</h1>
-          <h3>Grocery Items</h3>
-          <ul>
-            { this.state.items.map((item, index) => {
-              return (
-                <div key={ index }>
-                  <li>{ item }</li>
-                  <button onClick={ () => { this.addItem(item) } }>Add Item</button>
-                </div>
-              )
-            })}
-          </ul>
-          <GroceryCart cart={ this.state.cart } />
+        <h1>Grocery App</h1>
+        <GroceryItems
+          items={ this.state.items }
+          addItem={ this.addItem }
+        />
+        <GroceryCart cart={ this.state.cart } />
       </React.Fragment>
     )
   }

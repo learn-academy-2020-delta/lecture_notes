@@ -11,3 +11,4 @@
 
 ### Second Iteration
 - break out the cart into its own component
+- break out items into its own component
