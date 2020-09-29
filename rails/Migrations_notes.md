@@ -29,10 +29,10 @@ Seperated by commas:
 # Statements used
 
 - To add a column.
- - add_column :table_name, :column_name, :data_type
+  - add_column :table_name, :column_name, :data_type
 - To remove a column.
- - remove_column :table_name, :column_name
+  - remove_column :table_name, :column_name
 - To change the datatype of a column.
- - change_column :table_name, :column_name, :data_type
+  - change_column :table_name, :column_name, :data_type
 - To rename a column.
- - rename_column :table_name, :old_column_name, :new_column_name
+  - rename_column :table_name, :old_column_name, :new_column_name
