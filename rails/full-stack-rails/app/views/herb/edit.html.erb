@@ -1,7 +1,7 @@
-<!-- NEW PAGE -->
+<!-- EDIT PAGE -->
 
-<h3>Add a New Herb</h3>
-<%= form_with url: '/herb', local: true do |form| %>
+<h3>Edit Herb</h3>
+<%= form_with model: @herb, method: :patch, local: true do |form| %>
 
   <%= form.label :name %>
   <%= form.text_field :name %>
@@ -15,7 +15,7 @@
   <%= form.label :is_watered, "Herb is NOT watered" %>
 
   <br>
-  <%= form.submit 'Add Herb' %>
+  <%= form.submit 'Edit Herb' %>
   <%= form.submit "clear", :type => "reset" %>
 <% end %>
 

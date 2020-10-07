@@ -1,14 +1,16 @@
+<!-- INDEX PAGE -->
+
 <h1>Herb App</h1>
 
 <ul>
   <% @herbs.each do |herb| %>
     <li>
-      <%# First version: %>
-      <%# <%= herb.name %>
-
       <%= link_to(herb.name, herb_path(herb)) %>
     </li>
   <% end %>
 </ul>
 
 <p><%= link_to 'New Herb Form', new_herb_path %></p>
+
+<%# First version: %>
+<%# <%= herb.name %>
