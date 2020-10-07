@@ -12,12 +12,14 @@ class HerbController < ApplicationController
 
   # new - form
   def new
-    @herb = Herb.new
   end
 
   # post/create - submit a form
   def create
-    @herb = Herb.create(herb_params)
+    @herb = Herb.create(
+      name: params[:name],
+      is_watered: params[:is_watered]
+    )
     if @herb.valid?
       redirect_to herbs_path
     else
@@ -37,7 +39,6 @@ class HerbController < ApplicationController
 
   # edit - form
   def edit
-    @herb = Herb.find(params[:id])
   end
 
   # update
@@ -54,7 +55,4 @@ class HerbController < ApplicationController
     end
   end
 
-  def herb_params
-    params.require(:herb).permit(:name, :is_watered)
-  end
 end
