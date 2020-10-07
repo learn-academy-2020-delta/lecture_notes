@@ -1,0 +1,9 @@
+<ul>
+  <% @rentals.each do |rental| %>
+    <li>
+      <%= rental.title %>
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to 'Check out another book', new_rental_path %>

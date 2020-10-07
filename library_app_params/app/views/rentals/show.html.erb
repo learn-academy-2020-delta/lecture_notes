@@ -1,0 +1,11 @@
+<%= @rental.title %>
+<br/>
+Due: <%= Date.tomorrow() %>
+
+<br/>
+<br/>
+<%= link_to 'Check out for another day', edit_rental_path %>
+<br/>
+<%= link_to 'Check out another book', new_rental_path %>
+<br/>
+<%= link_to 'See all books', rentals_path %>
